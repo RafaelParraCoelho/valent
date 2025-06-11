@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Carta de Hogwarts</title>
+    <style>
+        body {
+            background: radial-gradient(circle, #fef6e4 0%, #e4dcd0 100%);
+            font-family: 'Georgia', serif;
+            color: #2c1e1e;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .carta-container {
+            max-width: 750px;
+            background-color: #fffaf0;
+            margin: 60px auto;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .brasao {
+            display: block;
+            margin: 0 auto 30px;
+            width: 160px;
+            animation: pulse 3s infinite ease-in-out;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        strong {
+            color: #5a2a2a;
+        }
+
+        .assinatura {
+            text-align: right;
+            font-style: italic;
+            margin-top: 40px;
+        }
+
+        .rodape {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Estrelas mágicas */
+        .estrela {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: gold;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: flutuar 3s linear infinite;
+        }
+
+        @keyframes flutuar {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-600px) scale(0.5);
+                opacity: 0;
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="carta-container">
+        <img src="6137929c4b96600004f676fe.png" alt="Brasão de Hogwarts" class="brasao">
+        
+        <h1>Carta de Hogwarts</h1>
+
+        <p>Prezada Ana Flávia Landim de Amorim,</p>
+
+        <p>
+            Temos o prazer de informar que você foi oficialmente selecionada para uma missão muito especial no mundo dos sentimentos encantados.
+            Após três anos testemunhando seus feitiços mais poderosos – como o sorriso iluminado, os abraços que confortam e o olhar que acalma –, a diretoria de Hogwarts reconheceu seu papel fundamental na magia da vida de um certo bruxo.
+        </p>
+
+        <p>
+            Você está convidada a fazer parte da <strong>Ordem dos Enlaçados pelo Destino</strong>, ao lado de um companheiro que, mesmo não sendo um mestre das poções, tem um coração completamente enfeitiçado por você.
+        </p>
+
+        <p><strong>Missão:</strong> continuar espalhando sua magia por este mundo e, principalmente, no coração daquele que te admira todos os dias.</p>
+
+        <p>
+            <strong>Itens incluídos nesta carta:</strong><br>
+            - Um presente escolhido com o carinho de um elfo doméstico e a ousadia de um grifinório apaixonado.<br>
+            - Poções especiais preparadas com ingredientes secretos (e muito amor).<br>
+            - Um lembrete eterno de que você é a bruxa mais encantadora que já existiu.
+        </p>
+
+        <div class="assinatura">
+            Com afeto, feitiços e um toque de travessura mágica,<br>
+            Rafael Parra Coelho<br>
+            Departamento de Magia Romântica
+        </div>
+
+        <div class="rodape">
+            Esta carta foi enviada via Coruja Express.
+        </div>
+    </div>
+
+    <script>
+        // Estrelas mágicas flutuando
+        function criarEstrela() {
+            const estrela = document.createElement('div');
+            estrela.classList.add('estrela');
+            estrela.style.left = Math.random() * window.innerWidth + 'px';
+            estrela.style.top = window.innerHeight + 'px';
+            document.body.appendChild(estrela);
+            setTimeout(() => estrela.remove(), 3000);
+        }
+
+        setInterval(criarEstrela, 300);
+    </script>
+</body>
+</html>
