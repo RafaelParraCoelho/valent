@@ -34,5 +34,6 @@ com a varinha na mão esquerda e o coração na direita.
 
 ---
 
+Link da carta: https://rafaelparracoelho.github.io/carta-hogwarts/
 Com todo meu afeto,  
 Rafael 💖
